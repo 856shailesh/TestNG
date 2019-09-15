@@ -1,0 +1,8 @@
+<suite name="Regression TestSuite">
+<test name="Application Test">
+	<classes>
+		<class name="testclasses.TestNg_TestClass1"></class>
+		<class name="testclasses.TestNg_TestClass2"></class>
+	</classes>
+</test>
+</suite>
