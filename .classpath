@@ -2,9 +2,6 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/856sh/eclipse-workspace/Selenium Libraries/testNG/jcommander-1.72.jar"/>
-	<classpathentry kind="lib" path="C:/Users/856sh/eclipse-workspace/Selenium Libraries/testNG/testng-6.14.3.jar" sourcepath="C:/Users/856sh/eclipse-workspace/Selenium Libraries/testNG/testng-6.14.3-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/shailesh.kumar2/eclipse-workspace/Selenium Libraries/testng-6.9.10.jar"/>
 	<classpathentry kind="lib" path="C:/Users/shailesh.kumar2/eclipse-workspace/Selenium Libraries/jcommander-1.72.jar"/>
 	<classpathentry kind="lib" path="C:/Users/shailesh.kumar2/eclipse-workspace/Selenium Libraries/testng-6.9.10-sources.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
