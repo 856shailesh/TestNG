@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testclasses.TestNG_SoftAsserts">
+      <class name="reporterDemo.TestNG_ReportsAndLogs">
         <methods>
-          <include name="testSum"/>
+          <include name="testMethod3"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="cleanUp"/>
+          <include name="testMethod2"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- testclasses.TestNG_SoftAsserts -->
+      </class> <!-- reporterDemo.TestNG_ReportsAndLogs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
