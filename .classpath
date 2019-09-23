@@ -16,5 +16,6 @@
 	<classpathentry kind="lib" path="C:/Users/shailesh.kumar2/eclipse-workspace/Selenium Libraries/freemarker-2.3.29.jar"/>
 	<classpathentry kind="lib" path="C:/Users/shailesh.kumar2/eclipse-workspace/Selenium Libraries/jsoup-1.12.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/shailesh.kumar2/eclipse-workspace/Selenium Libraries/sqlite-jdbc-3.28.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shailesh.kumar2/eclipse-workspace/Selenium Libraries/commons-io-2.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
