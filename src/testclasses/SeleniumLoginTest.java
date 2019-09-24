@@ -1,5 +1,6 @@
 package testclasses;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -9,13 +10,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
+import utilities.Screenshots;
 
 public class SeleniumLoginTest {
 
@@ -71,8 +76,13 @@ public class SeleniumLoginTest {
 
 	}
 
-	@AfterClass
-	public void afterClass() {
+	@AfterMethod
+	public void tearDown(ITestResult testResult) throws IOException {
+		if (testResult.getStatus() == ITestResult.FAILURE) {
+			String path = Screenshots.takeScreenshot(driver, testResult.getName());
+			String imagePath = test.addScreenCapture(path);
+			test.log(LogStatus.FAIL, "Verify Welcome Text Failed", imagePath);
+		}
 		driver.quit();
 		report.endTest(test);
 		report.flush();
